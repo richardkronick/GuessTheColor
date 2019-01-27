@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guess the Color Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Guess the Color Game 
+        <br>
+        RGB Challenge
+        <br>
+        <span id="colorDisplay">RGB</span>
+    </h1>
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <button class="mode">Easy</button>
+        <button class="mode selected">Hard</button>
+    </div>
+    <div id="score">Score: <span id="scoreDisplay">0</span></div>
+    <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div id="directions">
+                <hr>
+                <p>
+                    <img src="RGBcolors.jpg" width="200" height="150">
+                    <span class="info">Directions:</span> Based on the RGB value above (three numbers), select the color you think is being represented. When you guess 
+                    the answer you get 5 points and lose 1 point for each of the missed answers. This is one of the best games for the brain of web developers and designers.
+                </p>
+                <p>
+                    <span class="info">What is RGB?</span> RGB (Red, Green, Blue) is a system of representing colors on a computer display. 
+                    These 3 colors can be combined to produce any visible color.  In this guess the color game, three random number are generated which, when combined,
+                    produce a color within the visible spectrum. This color system is used online in web deveopment and design. 
+                    Visit <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">Wikipedia</a> to learn more.
+                </p>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
